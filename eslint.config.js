@@ -1,10 +1,14 @@
 // @ts-check
 
-import lichthagel from "@lichthagel/eslint-config";
+// import lichthagel from '@lichthagel/eslint-config'
+import antfu from '@antfu/eslint-config'
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
-  ...await lichthagel({}),
+  // ...await lichthagel({}),
+  ...await antfu({
+
+  }),
   {
     languageOptions: {
       parserOptions: {
@@ -13,6 +17,6 @@ export default [
     },
   },
   {
-    ignores: ["node_modules", "dist"],
+    ignores: ['node_modules', 'dist', '.pnpm-store'],
   },
-];
+]
