@@ -7,7 +7,10 @@ import antfu from '@antfu/eslint-config'
 export default [
   // ...await lichthagel({}),
   ...await antfu({
-
+    typescript: {
+      tsconfigPath: './tsconfig.json',
+      filesTypeAware: ['**/*.js', '**/*.ts'],
+    },
   }),
   {
     languageOptions: {
