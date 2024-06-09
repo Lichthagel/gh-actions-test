@@ -5,7 +5,7 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.21.0",
+    "@antfu/eslint-config": "github:antfu/eslint-config",
     "@lichthagel/eslint-config": "github:lichthagel/eslint-config",
     "eslint": "^9.4.0",
     "eslint-plugin-n": "^17.8.1"
